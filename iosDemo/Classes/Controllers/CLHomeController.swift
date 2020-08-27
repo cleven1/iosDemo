@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CLHomeController: UIViewController {
 
+    private var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupUI()
     }
 
+    private func setupUI() {
+        
+    }
 
 }
 

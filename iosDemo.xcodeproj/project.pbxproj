@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,15 @@
 		31A7BB1BA7F6973A0AB3576B /* Pods_iosDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96B4C4323D1472E4874ADC4 /* Pods_iosDemo.framework */; };
 		A354AE9224F7B75100976455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AE9124F7B75100976455 /* AppDelegate.swift */; };
 		A354AE9424F7B75100976455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AE9324F7B75100976455 /* SceneDelegate.swift */; };
-		A354AE9624F7B75100976455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AE9524F7B75100976455 /* ViewController.swift */; };
+		A354AE9624F7B75100976455 /* CLHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AE9524F7B75100976455 /* CLHomeController.swift */; };
 		A354AE9924F7B75100976455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A354AE9724F7B75100976455 /* Main.storyboard */; };
 		A354AE9B24F7B75300976455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A354AE9A24F7B75300976455 /* Assets.xcassets */; };
 		A354AE9E24F7B75300976455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A354AE9C24F7B75300976455 /* LaunchScreen.storyboard */; };
 		A354AEA924F7B75300976455 /* iosDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AEA824F7B75300976455 /* iosDemoTests.swift */; };
 		A354AEB424F7B75300976455 /* iosDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AEB324F7B75300976455 /* iosDemoUITests.swift */; };
+		A354AEC824F7B8C400976455 /* CLNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AEC724F7B8C400976455 /* CLNetworkManager.swift */; };
+		A354AECA24F7BB2E00976455 /* CLDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AEC924F7BB2E00976455 /* CLDataModel.swift */; };
+		A354AECC24F7BB7700976455 /* CLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AECB24F7BB7700976455 /* CLCommon.swift */; };
 		CFDED29365D211ABCB246DD2 /* Pods_iosDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA2F281FF710220CA84DF9 /* Pods_iosDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +49,7 @@
 		A354AE8E24F7B75100976455 /* iosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A354AE9124F7B75100976455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A354AE9324F7B75100976455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A354AE9524F7B75100976455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A354AE9524F7B75100976455 /* CLHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLHomeController.swift; sourceTree = "<group>"; };
 		A354AE9824F7B75100976455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A354AE9A24F7B75300976455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A354AE9D24F7B75300976455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,9 @@
 		A354AEAF24F7B75300976455 /* iosDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A354AEB324F7B75300976455 /* iosDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosDemoUITests.swift; sourceTree = "<group>"; };
 		A354AEB524F7B75300976455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A354AEC724F7B8C400976455 /* CLNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLNetworkManager.swift; sourceTree = "<group>"; };
+		A354AEC924F7BB2E00976455 /* CLDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLDataModel.swift; sourceTree = "<group>"; };
+		A354AECB24F7BB7700976455 /* CLCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCommon.swift; sourceTree = "<group>"; };
 		B1F7E6954F4D73597446C945 /* Pods-iosDemo-iosDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo-iosDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-iosDemo-iosDemoUITests/Pods-iosDemo-iosDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B93ACD9B045ED23794D2958D /* Pods-iosDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo.release.xcconfig"; path = "Target Support Files/Pods-iosDemo/Pods-iosDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B96B4C4323D1472E4874ADC4 /* Pods_iosDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +117,6 @@
 				42064940A1ADD8D7B6F0CFD4 /* Pods-iosDemoTests.debug.xcconfig */,
 				9415E00BC780C23C99514B45 /* Pods-iosDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,8 +147,10 @@
 			children = (
 				A354AE9124F7B75100976455 /* AppDelegate.swift */,
 				A354AE9324F7B75100976455 /* SceneDelegate.swift */,
-				A354AE9524F7B75100976455 /* ViewController.swift */,
 				A354AE9724F7B75100976455 /* Main.storyboard */,
+				A354AEC624F7B89100976455 /* Network */,
+				A354AEC524F7B81E00976455 /* Common */,
+				A354AEC124F7B7D400976455 /* Classes */,
 				A354AE9A24F7B75300976455 /* Assets.xcassets */,
 				A354AE9C24F7B75300976455 /* LaunchScreen.storyboard */,
 				A354AE9F24F7B75300976455 /* Info.plist */,
@@ -167,6 +174,55 @@
 				A354AEB524F7B75300976455 /* Info.plist */,
 			);
 			path = iosDemoUITests;
+			sourceTree = "<group>";
+		};
+		A354AEC124F7B7D400976455 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A354AEC424F7B81400976455 /* Views */,
+				A354AEC324F7B80E00976455 /* Models */,
+				A354AEC224F7B80300976455 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A354AEC224F7B80300976455 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A354AE9524F7B75100976455 /* CLHomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A354AEC324F7B80E00976455 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A354AEC924F7BB2E00976455 /* CLDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A354AEC424F7B81400976455 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A354AEC524F7B81E00976455 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A354AECB24F7BB7700976455 /* CLCommon.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A354AEC624F7B89100976455 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A354AEC724F7B8C400976455 /* CLNetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,9 +464,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A354AE9624F7B75100976455 /* ViewController.swift in Sources */,
+				A354AE9624F7B75100976455 /* CLHomeController.swift in Sources */,
+				A354AEC824F7B8C400976455 /* CLNetworkManager.swift in Sources */,
 				A354AE9224F7B75100976455 /* AppDelegate.swift in Sources */,
+				A354AECA24F7BB2E00976455 /* CLDataModel.swift in Sources */,
 				A354AE9424F7B75100976455 /* SceneDelegate.swift in Sources */,
+				A354AECC24F7BB7700976455 /* CLCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBV87768Y8;
 				INFOPLIST_FILE = iosDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +663,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBV87768Y8;
 				INFOPLIST_FILE = iosDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
