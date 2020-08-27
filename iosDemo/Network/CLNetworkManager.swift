@@ -12,12 +12,12 @@ class CLNetworkManager: NSObject {
     
     public static var sharedManager = CLNetworkManager();
     
-    public func fetchData(success: ()->()){
+    public func fetchData(success: @escaping (CLDataModel)->()){
         
         request(urlString: "https://api.github.com",success: success)
     }
     
-    private func request(urlString: String, success: ()->()){
+    private func request(urlString: String, success: @escaping (CLDataModel)->()){
         guard let url = URL(string: urlString) else {
             print("url不合法");
             return
@@ -27,10 +27,11 @@ class CLNetworkManager: NSObject {
             
             guard let data = data else {return}
             
-            if let jsonObj:NSDictionary = try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
-                //操作之前
-                print(jsonObj)
-
+            if let jsonData: [String: Any] = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : Any]{
+                let model = CLDataModel()
+                model.dataWithModel(data: jsonData)
+                CLRealmUtil.saveData(dataModel: model)
+                success(model)
             }
         }
         task.resume()

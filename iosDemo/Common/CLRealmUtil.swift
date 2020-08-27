@@ -15,7 +15,7 @@ class CLRealmUtil: NSObject {
     /// 配置数据库
     public class func configRealm() {
         /// 如果要存储的数据模型属性发生变化,需要配置当前版本号比之前大
-        let dbVersion : UInt64 = 1
+        let dbVersion : UInt64 = 10
         let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
         let dbPath = docPath.appending("/defaultDB.realm")
         let config = Realm.Configuration(fileURL: URL.init(string: dbPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: dbVersion, migrationBlock: { (migration, oldSchemaVersion) in
@@ -33,18 +33,27 @@ class CLRealmUtil: NSObject {
     }
     
     public class func saveData(dataModel: CLDataModel){
-        let realm = try? Realm()
-        realm?.beginWrite()
-        realm?.add(dataModel)
-        try? realm?.commitWrite()
+        DispatchQueue.main.async {
+            let realm = try! Realm()
+            try? realm.write{
+                realm.add(dataModel)
+            }
+        }
     }
     
-    public class func getAllData(){
+    public class func getAllData() -> [CLDataModel]?{
         let realm = try? Realm()
-//        let result = realm?.objects(CLDataModel.self)
-        let result = realm?.objects(CLDataModel.self)
-        print(result)
-//        return result
+        guard let result = realm?.objects(CLDataModel.self).sorted(by: { (model1, model2) -> Bool in
+            return model1.id.compare(model2.id) == .orderedDescending
+        }) else {
+            return nil
+        }
+        var tempArray = [CLDataModel]()
+        for item in Array(result) {
+            print(item.id)
+            tempArray.append(item)
+        }
+        return tempArray
     }
     
     public class func deleteData(key: String){
