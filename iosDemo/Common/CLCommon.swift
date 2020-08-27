@@ -14,7 +14,7 @@ class CLCommon: NSObject {
         guard let ts = Double(timeStamp) else {
             return ""
         }
-        let date = Date(timeIntervalSince1970: ts)
+        let date = Date(timeIntervalSince1970: ts/10000)
         let format = DateFormatter()
         format.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let result = format.string(from: date)

@@ -61,4 +61,9 @@ class CLHomeItemCell: UITableViewCell {
             subLabel.textColor = UIColor(red: 151/255, green: 217/255, blue: 225/255, alpha: 1.0)
         }
     }
+    
+    public func setHistoryData(dataModel: CLDataModel){
+        nameLabel.text = "请求时间: \(CLCommon.dateFormat(timeStamp: dataModel.id))"
+        subLabel.text = CLDataModel.encoder(toDictionary: dataModel)?.description
+    }
 }

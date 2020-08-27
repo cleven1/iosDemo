@@ -52,7 +52,7 @@ class CLDataModel: Object,Encodable {
  
     
     public func dataWithModel(data: [String: Any]){
-        self.id = "\(Int(NSDate().timeIntervalSince1970))"
+        self.id = "\(Int(NSDate().timeIntervalSince1970 * 10000))"
         self.authorizations_url = data["authorizations_url"] as! String
         self.code_search_url = data["code_search_url"] as! String
         self.commit_search_url = data["commit_search_url"] as! String

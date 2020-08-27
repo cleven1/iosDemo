@@ -16,6 +16,7 @@ class CLHomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
         setupUI()
         getCacheData()
         Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] (timer) in
@@ -23,6 +24,11 @@ class CLHomeController: UIViewController {
         }
     }
 
+    private func setupNavigationBar(){
+        let rightBarButton = UIBarButtonItem(title: "历史记录", style: .done, target: self, action: #selector(self.clickRightBarButton))
+        navigationItem.rightBarButtonItem = rightBarButton;
+    }
+    
     private func setupUI() {
         tableView = UITableView(frame: .zero, style: .plain)
         tableView.delegate = self
@@ -56,6 +62,11 @@ class CLHomeController: UIViewController {
         }
     }
 
+    @objc private func clickRightBarButton(){
+        let historyVC = CLHistoryController()
+        navigationController?.pushViewController(historyVC, animated: true)
+    }
+    
 }
 
 extension CLHomeController: UITableViewDelegate,UITableViewDataSource {
