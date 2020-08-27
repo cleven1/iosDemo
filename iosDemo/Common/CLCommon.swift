@@ -21,5 +21,17 @@ class CLCommon: NSObject {
 
         return result
     }
-
+    
+    public class func mainWindow() -> UIWindow?{
+        if let window = UIApplication.shared.windows.first(where: { (wd) -> Bool in
+            if wd.isKeyWindow{
+                return true
+            }else{
+                return false
+            }
+        }){
+            return window
+        }
+        return nil
+    }
 }

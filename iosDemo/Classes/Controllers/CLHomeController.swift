@@ -22,5 +22,8 @@ class CLHomeController: UIViewController {
         
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        CLToast.showToast(view: nil, hint: "呵呵哒")
+    }
 }
 

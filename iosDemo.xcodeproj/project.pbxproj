@@ -20,6 +20,7 @@
 		A354AEC824F7B8C400976455 /* CLNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AEC724F7B8C400976455 /* CLNetworkManager.swift */; };
 		A354AECA24F7BB2E00976455 /* CLDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AEC924F7BB2E00976455 /* CLDataModel.swift */; };
 		A354AECC24F7BB7700976455 /* CLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AECB24F7BB7700976455 /* CLCommon.swift */; };
+		A354AECE24F7BEA100976455 /* CLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354AECD24F7BEA100976455 /* CLToast.swift */; };
 		CFDED29365D211ABCB246DD2 /* Pods_iosDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA2F281FF710220CA84DF9 /* Pods_iosDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		A354AEC724F7B8C400976455 /* CLNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLNetworkManager.swift; sourceTree = "<group>"; };
 		A354AEC924F7BB2E00976455 /* CLDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLDataModel.swift; sourceTree = "<group>"; };
 		A354AECB24F7BB7700976455 /* CLCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCommon.swift; sourceTree = "<group>"; };
+		A354AECD24F7BEA100976455 /* CLToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLToast.swift; sourceTree = "<group>"; };
 		B1F7E6954F4D73597446C945 /* Pods-iosDemo-iosDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo-iosDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-iosDemo-iosDemoUITests/Pods-iosDemo-iosDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B93ACD9B045ED23794D2958D /* Pods-iosDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo.release.xcconfig"; path = "Target Support Files/Pods-iosDemo/Pods-iosDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B96B4C4323D1472E4874ADC4 /* Pods_iosDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A354AECB24F7BB7700976455 /* CLCommon.swift */,
+				A354AECD24F7BEA100976455 /* CLToast.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				A354AE9624F7B75100976455 /* CLHomeController.swift in Sources */,
 				A354AEC824F7B8C400976455 /* CLNetworkManager.swift in Sources */,
 				A354AE9224F7B75100976455 /* AppDelegate.swift in Sources */,
+				A354AECE24F7BEA100976455 /* CLToast.swift in Sources */,
 				A354AECA24F7BB2E00976455 /* CLDataModel.swift in Sources */,
 				A354AE9424F7B75100976455 /* SceneDelegate.swift in Sources */,
 				A354AECC24F7BB7700976455 /* CLCommon.swift in Sources */,
